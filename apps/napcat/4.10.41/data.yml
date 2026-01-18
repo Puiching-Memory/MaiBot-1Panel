@@ -1,0 +1,68 @@
+additionalProperties:
+  formFields:
+    - default: 6099
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: WebUI Port
+      labelZh: WebUI 端口
+      required: true
+      rule: paramPort
+      type: number
+      label:
+        en: WebUI Port
+        ja: WebUI ポート
+        ms: Port WebUI
+        pt-br: Porta WebUI
+        ru: Порт WebUI
+        ko: WebUI 포트
+        zh-Hant: WebUI 埠
+        zh: WebUI 端口
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time Zone
+      labelZh: 时区
+      required: true
+      type: text
+      label:
+        en: Time Zone
+        ja: タイムゾーン
+        ms: Zon Masa
+        pt-br: Fuso horário
+        ru: Часовой пояс
+        ko: 시간대
+        zh-Hant: 時區
+        zh: 时区
+    - default: "1000"
+      edit: true
+      envKey: NAPCAT_UID
+      labelEn: NapCat UID
+      labelZh: NapCat UID
+      required: true
+      type: number
+      label:
+        en: NapCat UID
+        ja: NapCat UID
+        ms: NapCat UID
+        pt-br: NapCat UID
+        ru: NapCat UID
+        ko: NapCat UID
+        zh-Hant: NapCat UID
+        zh: NapCat UID
+    - default: "1000"
+      edit: true
+      envKey: NAPCAT_GID
+      labelEn: NapCat GID
+      labelZh: NapCat GID
+      required: true
+      type: number
+      label:
+        en: NapCat GID
+        ja: NapCat GID
+        ms: NapCat GID
+        pt-br: NapCat GID
+        ru: NapCat GID
+        ko: NapCat GID
+        zh-Hant: NapCat GID
+        zh: NapCat GID
+

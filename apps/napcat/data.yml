@@ -1,0 +1,32 @@
+name: NapCat
+tags:
+  - Bot
+title: 轻量稳定的 QQ 协议机器人容器化部署方案
+description: 轻量稳定的 QQ 协议机器人容器化部署方案
+additionalProperties:
+  key: napcat
+  name: NapCat
+  tags:
+    - Bot
+  shortDescZh: 轻量稳定的 QQ 协议机器人容器化部署方案
+  shortDescEn: Lightweight and stable containerized deployment for the NapCat QQ bot
+  description:
+    en: Lightweight and stable containerized deployment for the NapCat QQ bot
+    ja: 軽量で安定した NapCat QQ ボットのコンテナデプロイメント
+    ms: Penyebaran berasaskan kontena yang ringan dan stabil untuk bot NapCat QQ
+    pt-br: Implantação conteinerizada leve e estável para o bot NapCat QQ
+    ru: Легкое и стабильное контейнеризированное развертывание бота NapCat QQ
+    ko: 경량이고 안정적인 NapCat QQ 봇 컨테이너 배포
+    zh-Hant: 輕量穩定的 QQ 協議機器人容器化部署方案
+    zh: 轻量稳定的 QQ 协议机器人容器化部署方案
+  type: tool
+  crossVersionUpdate: false
+  limit: 0
+  recommend: 0
+  website: https://github.com/NapNeko/NapCatQQ
+  github: https://github.com/NapNeko/NapCat-Docker
+  document: https://github.com/NapNeko/NapCat-Docker
+  architectures:
+    - amd64
+    - arm64
+
