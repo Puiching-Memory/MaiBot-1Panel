@@ -1,15 +1,14 @@
 services:
-  ollama:
-    image: ollama/ollama:0.15.5
+  uptime-kuma:
+    image: louislam/uptime-kuma:2.1.0
     container_name: ${CONTAINER_NAME}
-    restart: unless-stopped
-    ports:
-      - ${PANEL_APP_PORT_HTTP}:11434
+    restart: always
     networks:
       - 1panel-network
-    tty: true
     volumes:
-      - ./data:/root/.ollama
+      - ./data:/app/data
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3001
     labels:
       createdBy: "Apps"
 networks:
