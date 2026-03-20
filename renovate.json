@@ -88,14 +88,6 @@
       "allowedVersions": "/^18.*/"
     },
     {
-      "matchFileNames": ["apps/maxkb/1.*/*.yml"],
-      "allowedVersions": "/^1.*/"
-    },
-    {
-      "matchFileNames": ["apps/maxkb/2.*/*.yml"],
-      "allowedVersions": "/^2.*/"
-    },
-    {
       "matchFileNames": ["apps/elasticsearch/7.*/*.yml"],
       "allowedVersions": "/^7.*/"
     },
@@ -190,26 +182,6 @@
     {
       "matchFileNames": ["apps/umami/3.*/*.yml"],
       "allowedVersions": "/^3.*/"
-    },
-    {
-      "matchFileNames": ["apps/n8n/2.2.*/*.yml"],
-      "allowedVersions": "/^2.2.*/"
-    },
-    {
-      "matchFileNames": ["apps/n8n/2.3.*/*.yml"],
-      "allowedVersions": "/^2.3.*/"
-    },
-    {
-      "matchFileNames": ["apps/n8n/2.4.*/*.yml"],
-      "allowedVersions": "/^2.4.*/"
-    },
-    {
-      "matchFileNames": ["apps/n8n/2.5.*/*.yml"],
-      "allowedVersions": "/^2.5.*/"
-    },
-    {
-      "matchFileNames": ["apps/n8n/2.6.*/*.yml"],
-      "allowedVersions": "/^2.6.*/"
     }
   ],
   "prCreation": "immediate"
