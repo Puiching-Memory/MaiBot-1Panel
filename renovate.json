@@ -88,11 +88,31 @@
       "allowedVersions": "/^18.*/"
     },
     {
+      "matchFileNames": ["apps/elasticsearch/9.*/*.yml"],
+      "allowedVersions": "/^9.*/"
+    },
+    {
+      "matchFileNames": ["apps/elasticsearch/8.*/*.yml"],
+      "allowedVersions": "/^8.*/"
+    },
+    {
       "matchFileNames": ["apps/elasticsearch/7.*/*.yml"],
       "allowedVersions": "/^7.*/"
     },
     {
-      "matchFileNames": ["apps/elasticsearch/8.*/*.yml"],
+      "matchFileNames": ["apps/kibana/9.*/*.yml"],
+      "allowedVersions": "/^9.*/"
+    },
+    {
+      "matchFileNames": ["apps/kibana/8.*/*.yml"],
+      "allowedVersions": "/^8.*/"
+    },
+    {
+      "matchFileNames": ["apps/logstash/9.*/*.yml"],
+      "allowedVersions": "/^9.*/"
+    },
+    {
+      "matchFileNames": ["apps/logstash/8.*/*.yml"],
       "allowedVersions": "/^8.*/"
     },
     {
@@ -126,6 +146,10 @@
     {
       "matchFileNames": ["apps/sonarqube/10.*/*.yml"],
       "allowedVersions": "/^10.*/"
+    },
+    {
+      "matchFileNames": ["apps/sonarqube/26.*/*.yml"],
+      "allowedVersions": "/^26.*/"
     },
     {
       "matchFileNames": ["apps/mssql/2017-*/*.yml"],
@@ -182,6 +206,22 @@
     {
       "matchFileNames": ["apps/umami/3.*/*.yml"],
       "allowedVersions": "/^3.*/"
+    },
+    {
+      "matchFileNames": ["apps/valkey/9.0.*/*.yml"],
+      "allowedVersions": "/^9.0.*/"
+    },
+    {
+      "matchFileNames": ["apps/valkey/8.1.*/*.yml"],
+      "allowedVersions": "/^8.1.*/"
+    },
+    {
+      "matchFileNames": ["apps/valkey/8.0.*/*.yml"],
+      "allowedVersions": "/^8.0.*/"
+    },
+    {
+      "matchFileNames": ["apps/valkey/7.2.*/*.yml"],
+      "allowedVersions": "/^7.2.*/"
     }
   ],
   "prCreation": "immediate"
