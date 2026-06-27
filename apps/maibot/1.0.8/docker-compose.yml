@@ -1,0 +1,28 @@
+services:
+  maibot:
+    image: sengokucola/maibot:1.0.8
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8001"
+    environment:
+      - TZ=${TIME_ZONE}
+      - EULA_AGREE=8e6e7d647f7f82d6ea98456b73908656
+      - PRIVACY_AGREE=91e5db7659c560bc3545e63859b6ebc0
+      - MAIBOT_LEGACY_0X_UPGRADE_CONFIRMED=1 # Docker 无法交互确认旧版升级迁移，默认跳过确认提示
+      - MAIBOT_STATISTICS_REPORT_PATH=/MaiMBot/data/maibot_statistics.html # 统计数据输出到共享目录，首次运行可自动创建文件
+    volumes:
+      - ./docker-config/mmc:/MaiMBot/config # 持久化bot配置文件
+      - ./data/MaiMBot:/MaiMBot/data # 共享目录
+      - ./data/MaiMBot/emoji:/data/emoji # 持久化表情包
+      - ./data/MaiMBot/plugins:/MaiMBot/plugins # 插件目录
+      - ./data/MaiMBot/logs:/MaiMBot/logs # 日志目录
+      - ./depends-data:/MaiMBot/depends-data # 运行时资源文件
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

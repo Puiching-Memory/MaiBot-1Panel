@@ -17,10 +17,10 @@ set -euo pipefail
 
 # --- 常量 -------------------------------------------------------------------
 readonly REPO_OWNER="Puiching-Memory"
-readonly REPO_NAME="appstore"
+readonly REPO_NAME="MaiBot-1Panel"
 readonly REPO_BRANCH="MaiBot"
 readonly APP_NAME="maibot"
-readonly SCRIPT_VERSION="2.0.0"
+readonly SCRIPT_VERSION="2.1.0"
 
 INSTALL_ROOT="${INSTALL_ROOT:-/opt/1panel/resource/apps/local}"
 GITHUB_MIRROR="${GITHUB_MIRROR:-}"

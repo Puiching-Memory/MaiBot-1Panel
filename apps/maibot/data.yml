@@ -29,4 +29,4 @@ additionalProperties:
   document: https://docs.mai-mai.org/manual/
   architectures:
     - amd64
-    - arm64 # SQLite-web镜像不支持arm64
+    - arm64
