@@ -11,15 +11,9 @@ _Modern protocol-side framework implemented based on NTQQ._
 
 ---
 
-## New Feature
+## New Framework ?
 
-在 v4.8.115+ 版本开始
-
-1. NapCatQQ 支持 [Stream Api](https://napneko.github.io/develop/file)
-2. NapCatQQ 推荐 message_id/user_id/group_id 均使用字符串类型
-
-- [1] 解决 Docker/跨设备/大文件 的多媒体上下传问题
-- [2] 采用字符串可以解决扩展到int64的问题，同时也可以解决部分语言（如JavaScript）对大整数支持不佳的问题，增加极少成本。
+可以试试更新更好用的 [SnowLuma](https://github.com/SnowLuma/SnowLuma) 作为NapCat Gui替代品。
 
 ## Welcome
 
@@ -50,10 +44,10 @@ _Modern protocol-side framework implemented based on NTQQ._
 | Docs | [![Github.IO](https://img.shields.io/badge/docs%20on-Github.IO-orange)](https://napneko.github.io/) | [![Cloudflare.Worker](https://img.shields.io/badge/docs%20on-Cloudflare.Worker-black)](https://doc.napneko.icu/) | [![Cloudflare.HKServer](https://img.shields.io/badge/docs%20on-Cloudflare.HKServer-informational)](https://napcat.napneko.icu/) |
 |:-:|:-:|:-:|:-:|
 
-| Docs | [![Cloudflare.Pages](https://img.shields.io/badge/docs%20on-Cloudflare.Pages-blue)](https://napneko.pages.dev/) | [![Server.Other](https://img.shields.io/badge/docs%20on-Server.Other-green)](https://napcat.cyou/) | [![NapCat.Wiki](https://img.shields.io/badge/docs%20on-NapCat.Wiki-red)](https://www.napcat.wiki) |
-|:-:|:-:|:-:|:-:|
+| Docs | [![Cloudflare.Pages](https://img.shields.io/badge/docs%20on-Cloudflare.Pages-blue)](https://napneko.pages.dev/) | [![Server.Other](https://img.shields.io/badge/docs%20on-Server.Other-green)](https://napcat.top/) | [![NapCat.Top](https://img.shields.io/badge/docs%20on-NapCat.Top-red)](https://napcat.top/) |
+|:-:|:-:|:-:|:|
 
-| QQ Group | [![QQ Group#4](https://img.shields.io/badge/QQ%20Group%234-Join-blue)](https://qm.qq.com/q/CMmPbGw0jA) | [![QQ Group#3](https://img.shields.io/badge/QQ%20Group%233-Join-blue)](https://qm.qq.com/q/8zJMLjqy2Y) | [![QQ Group#2](https://img.shields.io/badge/QQ%20Group%232-Join-blue)](https://qm.qq.com/q/CMmPbGw0jA) | [![QQ Group#1](https://img.shields.io/badge/QQ%20Group%231-Join-blue)](https://qm.qq.com/q/I6LU87a0Yq) |
+| QQ Group | [![NapCat Family Group 4](https://img.shields.io/badge/NapCat%20Family%20Group%204-Join-blue)](https://qm.qq.com/q/E4nfkGD6oK) | [![NapCat Family Group 3](https://img.shields.io/badge/NapCat%20Family%20Group%203-Join-blue)](https://qm.qq.com/q/XyiyGPqa42) | [![NapCat Family Group 2](https://img.shields.io/badge/NapCat%20Family%20Group%202-Join-blue)](https://qm.qq.com/q/gq18RH7o7S) | [![NapCat Family Group 1](https://img.shields.io/badge/NapCat%20Family%20Group%201-Join-blue)](https://qm.qq.com/q/VwpnklcXqo) |
 |:-:|:-:|:-:|:-:|:-:|
 
 | Telegram | [![Telegram](https://img.shields.io/badge/Telegram-napcatqq-blue)](https://t.me/napcatqq) |
@@ -61,6 +55,12 @@ _Modern protocol-side framework implemented based on NTQQ._
 
 | DeepWiki | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/NapNeko/NapCatQQ) |
 |:-:|:-:|
+
+> QQ群因为特殊原因需要入群密钥，请在webui关于页面获取，仅最新的100个版本以内有效。
+
+社区相关日后会进一步加强审核，并严格限制一定时间的入群人数，请具备一定编程基础和问题解决能力再申请入群。
+
+[困困猫猫的高中](https://qm.qq.com/q/14aUVclRUA)
 
 > 请不要在其余社区提及本项目(包括其余协议端/相关应用端项目)引发争论，如有建议到达官方交流群讨论或PR。
 
