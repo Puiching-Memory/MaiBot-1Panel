@@ -14,3 +14,10 @@ additionalProperties:
           labelZh: WebUI 端口
           required: true
           type: number
+        - default: 6099
+          edit: true
+          envKey: PANEL_APP_PORT_NAPCAT
+          labelEn: NapCat WebUI Port
+          labelZh: NapCat 管理面板端口
+          required: true
+          type: number

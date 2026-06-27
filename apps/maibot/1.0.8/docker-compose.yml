@@ -23,6 +23,25 @@ services:
     labels:
       createdBy: "Apps"
 
+  napcat:
+    image: mlikiowa/napcat-docker:latest
+    container_name: ${CONTAINER_NAME}-napcat
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_NAPCAT}:6099"
+    environment:
+      - NAPCAT_UID=1000
+      - NAPCAT_GID=1000
+      - TZ=${TIME_ZONE}
+    volumes:
+      - ./docker-config/napcat:/app/napcat/config # 持久化napcat配置文件
+      - ./data/qq:/app/.config/QQ # 持久化QQ本体
+      - ./data/MaiMBot:/MaiMBot/data # 共享目录
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
 networks:
   1panel-network:
     external: true
