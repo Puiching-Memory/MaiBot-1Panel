@@ -1,0 +1,47 @@
+services:
+  maibot_adapters:
+    image: unclas/maimbot-adapter:dev-20260116153739
+    container_name: ${CONTAINER_NAME}-adapters
+    restart: always
+    environment:
+      - TZ=${TIME_ZONE}
+    volumes:
+      - ./docker-config/adapters/config.toml:/adapters/config.toml
+      - ./data/adapters:/adapters/data
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+  maibot:
+    image: sengokucola/maibot:0.12.2
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    depends_on:
+      - maibot_adapters
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8001"
+    environment:
+      - TZ=${TIME_ZONE}
+      - EULA_AGREE=1b662741904d7155d1ce1c00b3530d0d
+      - PRIVACY_AGREE=9943b855e72199d0f5016ea39052f1b6
+    volumes:
+      - ./docker-config/mmc/.env:/MaiMBot/.env
+      - ./docker-config/mmc:/MaiMBot/config
+      - ./docker-config/adapters:/MaiMBot/adapters-config
+      - ./data/MaiMBot/maibot_statistics.html:/MaiMBot/maibot_statistics.html
+      - ./data/MaiMBot:/MaiMBot/data
+      - ./data/MaiMBot/plugins:/MaiMBot/plugins
+      - ./data/MaiMBot/logs:/MaiMBot/logs
+      # - site-packages:/usr/local/lib/python3.13/site-packages
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+volumes:
+  site-packages:
+
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,32 @@
+name: MaiBot
+tags:
+  - AI
+title: 多模型、拟人化、可扩展的智能体
+description: 多模型、拟人化、可扩展的智能体
+
+additionalProperties:
+  key: maibot
+  name: MaiBot
+  tags:
+    - AI
+  shortDescZh: 多模型、拟人化、可扩展的智能体
+  shortDescEn: Multi-model, anthropomorphic, extensible intelligent agent
+  description:
+    en: Multi-model, anthropomorphic, extensible intelligent agent
+    ja: 複数のモデルによる擬人化された拡張可能なインテリジェントエージェント
+    ms: Ejen pintar berbilang model, antropomorfik dan boleh dikembangkan
+    pt-br: Agente inteligente multimodelo, antropomórfico e extensível
+    ru: Мультимодельный, антропоморфный, расширяемый интеллектуальный агент
+    ko: 다중 모델 기반의 인간형 확장 가능한 지능형 에이전트
+    zh-Hant: 多模型、擬人化、可擴展的智能體
+    zh: 多模型、拟人化、可扩展的智能体
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://docs.mai-mai.org/
+  github: https://github.com/MaiM-with-u/MaiBot
+  document: https://docs.mai-mai.org/manual/
+  architectures:
+    - amd64
+    - arm64 # SQLite-web镜像不支持arm64

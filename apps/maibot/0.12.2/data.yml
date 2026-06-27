@@ -1,0 +1,16 @@
+additionalProperties:
+    formFields:
+        - default: Asia/Shanghai
+          edit: true
+          envKey: TIME_ZONE
+          labelEn: Time zone
+          labelZh: 时区
+          required: true
+          type: text
+        - default: 18001
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: WebUI Port
+          labelZh: WebUI 端口
+          required: true
+          type: number
